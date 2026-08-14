@@ -52,18 +52,11 @@ This approach allows the recommendation to consider not only how closely a pet m
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- jQuery
-- Font Awesome
 
 ### Backend
 - PHP
 - MySQL
 - JSON-based data exchange using `fetch()`
-
-### Additional tools and libraries
-- Figma — UI design and prototyping
-- Chrome DevTools — debugging and responsive testing
-- Headbreaker — puzzle game functionality
 
 ## Database
 
@@ -154,18 +147,6 @@ http://localhost/PetsShelter_project/home.html
 ```
 
 > Do not commit database usernames, passwords, or other credentials to GitHub. Database credentials should be stored in a local configuration file or environment variables.
-
-## Testing
-
-The project was tested for:
-
-- correct database connection and data retrieval
-- correct display of animal information
-- adoption form validation
-- handling of empty search/filter results
-- recommendation test calculations
-- responsive behavior on different screen sizes
-- JavaScript functionality using Chrome DevTools
 
 ## Project Focus
 
