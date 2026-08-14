@@ -1,8 +1,9 @@
 # 🐾 Animal Shelter Adoption Web Service
 
 A multifunctional web application for browsing animals from a shelter, finding a suitable pet, saving favorites, and submitting adoption requests.
-
 This project was developed as a Bachelor's thesis in Computer Science.
+
+**[Live Demo](https://lisa.freehosting.dev/PetsShelter_project/home.html)** · **[Repository](https://github.com/LisaNik/movie-watchlist)**
 
 ## Overview
 
