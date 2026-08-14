@@ -3,9 +3,9 @@
 A multifunctional web application for browsing animals from a shelter, finding a suitable pet, saving favorites, and submitting adoption requests.
 This project was developed as a Bachelor's thesis in Computer Science.
 
-**[Live Demo](https://lisa.freehosting.dev/PetsShelter_project/home.html)** · **[Repository](https://github.com/LisaNik/movie-watchlist)**
+**[Live Demo](https://lisa.freehosting.dev/PetsShelter_project/home.html)** · **[Repository](https://github.com/LisaNik/pets-shelter-project)**
 
-## Overview
+## About
 
 The application is designed to make the process of finding and adopting a shelter animal more convenient. Users can browse animal profiles, filter the catalog, save favorite animals, learn more about individual pets, complete a personalized pet-selection test, and submit an adoption request.
 
