@@ -1,0 +1,615 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600&display=swap');
+
+@import url(modal.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "cocon";
+    src: url("../fonts/cocon_regular.otf") format("opentype");
+}
+
+body {
+    font-family: "cocon", sans-serif;
+    background-color: #5B85F6;
+}
+
+li, a {
+    font-size: 16px;
+    font-weight: 200;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+#site-header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #5B85F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 132px;
+    transition: all 0.5s ease 0s;
+    z-index: 9001;
+}
+
+#site-header.hide {
+    top: -100px;
+}
+
+.logo {
+    cursor: pointer;
+    height: 32px;
+    width: 160px;
+}
+
+.nav_links {
+    list-style: none;
+    margin-right: 162px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover, .nav_links li a.active {
+    color: #FFDC26;
+}
+
+.button {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+}
+
+.yellow {
+    width: 160px;
+    height: 54px;
+    margin: auto;
+    background-color: #FFDC26;
+    color: #262626;
+}
+
+.transparent {
+    width: 160px;
+    height: 54px;
+    margin: auto;
+    background-color: #5B85F6;
+    border: 1px solid white;
+    color: white;
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+.search {
+    width: 200px;
+    height: 54px;
+    margin: auto;
+    background-color: #FFDC26;
+    background-image: url(../images/search.svg);
+    padding-left: 30px;
+    color: #262626;
+}
+
+.yellow:hover, .transparent:hover, .search:hover {
+    transition: all 0.3s ease 0s;
+    background-color: #FFFFFF;
+    color: #262626;
+}
+
+.button-like {
+    width: 54px;
+    height: 54px;
+    margin: auto;
+    background-color: #7C9DF8;
+    border: none;
+    color: transparent;
+    background-image: url(../images/likes.svg);
+}
+
+.like{    
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    background-color: #7C9DF8;
+    border: none;
+    color: transparent;
+    background-image: url(../images/likes.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.like:hover {
+    width: 64px;
+    height: 64px;
+    transition: all 0.3s ease 0s;
+    background-image: url(../images/heart_hover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button-like:hover {
+    width: 54px;
+    height: 54px;
+    transition: all 0.3s ease 0s;
+    background-image: url(../images/heart_hover.png);
+}
+
+
+.home {
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 140px 140px 0 140px;
+
+    background-image: url(../images/backgr/Group-stars.svg);
+    background-position: center;
+
+
+    .image {
+        flex: 1 1 0;
+        height: 740px;
+        width: 540px;
+    }
+
+    .content {
+        flex: 1 1 0;
+        margin-top: 120px;
+        margin-left: 0;
+        margin-right: 90px;
+        color: #ffffff;
+    }
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 80px;
+    margin-top: 0;
+    line-height: 100%; /*Интерлиньяж (расстояние между строк)*/
+}
+
+p {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 80%;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 40px; /* Отступ снизу */
+    line-height: 26px; /*Интерлиньяж (расстояние между строк)*/
+}
+
+
+.about {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-image: url(../images/background_about.png);
+    background-size: cover;
+    gap: 30px;
+    padding: 0 0 0 0;
+
+    .image {
+        flex: 1 1 0;
+    }
+
+    .content {
+        max-width: 500px;
+        flex: 1 1 0;
+        margin-top: 80px;
+        margin-bottom: 0;
+        margin-left: 132px;
+        margin-right: 0;
+        color: #ffffff;
+    }
+}
+
+.about .content h1 {
+    text-align: left;
+    font-size: 68px;
+    margin-top: 0;
+}
+
+.about .content p {
+    margin-bottom: 0; /* Отступ снизу */
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    font-size: 68px;
+    margin-bottom: 48px;
+}
+
+.game {
+    margin-top: 120px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.game-subtitle {
+    font-family: 'Geologica', sans-serif;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #bdcefb !important;
+    text-align: center;
+}
+
+.game-subtitle:not(.active) {
+    display: none;
+}
+
+.game-loader {
+    position: relative;
+    width: 780px;
+    height: 24px;
+    margin-bottom: 72px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+    background-color: #7c9df8;
+}
+
+.game-loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #ffdc26;    
+    transition: all 0.6s ease-in-out 0s;
+}
+
+.game-loader.stage1:after {
+    width: 35px;
+}
+
+.game-loader.stage2:after {
+    width: 380px;
+}
+
+.game-loader.stage3:after {
+    width: 100%;
+}
+
+.game-screen {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-screen:not(.active) {
+    display: none;
+}
+
+#gameScreen1 {
+    background-image: url(../images/gameBg.svg);
+    background-size: 982px auto;
+    background-repeat: no-repeat;
+    background-position: 100px 12px;
+}
+
+#gameScreen1 .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#gameScreen1 .image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#gameScreen1 .image-container:not(:first-child) {
+    margin-left: 20px;
+}
+
+#gameScreen1 .image-container img {
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#gameScreen1 .image-container:nth-child(1) img {
+    width: 160px;
+}
+
+#gameScreen1 .image-container:nth-child(2) img {
+    width: 203px;
+}
+
+#gameScreen1 .image-container:nth-child(2) *:not(:first-child) {
+    margin-top: 45px;
+}
+
+#gameScreen1 .image-container:nth-child(3) img {
+    width: 163px;
+}
+
+#gameScreen1 .image-container:nth-child(3) *:not(:first-child) {
+    margin-top: 25px;
+}
+
+#gameScreen1 .image-container:nth-child(4) img {
+    width: 183px;
+}
+
+#gameScreen1 .image-container:nth-child(5) img {
+    width: 163px;
+}
+
+#gameScreen1 .image-container:nth-child(5) *:not(:first-child) {
+    margin-top: 25px;
+}
+
+#gameScreen1 .image-container:nth-child(6) img {
+    width: 160px;
+}
+
+.game-puzzle, .game-result {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 64px;
+    padding: 48px;
+    background: #7C9DF8;
+}
+
+.game-result img {
+    width: 322px;
+    object-fit: contain;
+    margin-bottom: 16px;
+    border-radius: 32px;
+}
+
+.game-result .name {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.game-result p.info {
+    opacity: 0.6;
+    margin-block: 0;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.game-result-actions {
+    display: flex;
+    margin-top: 16px;
+}
+.game-result-actions .yellow{
+    height: 64px;
+    margin-right: 16px;
+}
+
+.game-result-actions > *:first-child {
+    flex-grow: 1;
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 152px);
+    gap: 12px;
+    width: fit-content;
+    margin: auto;
+    background-color: #7C9DF8;
+    padding: 48px;
+    border-radius: 64px;
+}
+
+.tile {
+    width: 152px;
+    height: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+    .tile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+
+
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -676px; /* Положение панели по умолчанию */
+    width: 676px;
+    position: fixed;
+    background-color: #5B85F6;
+    transition: right 0.5s ease; /* Анимация при изменении положения */
+    border-radius: 32px 0px 0px 32px;
+    z-index: 9990; /* Убедитесь, что кнопка находится поверх всего остального */
+    padding: 22px 48px 0px 48px;    
+    height: 100vh;
+    overflow-y: scroll; /* Включаем вертикальную полосу прокрутки */
+    -ms-overflow-style: none;  /* Устанавливаем стиль прокрутки для IE/Edge */
+    scrollbar-width: none; /* Устанавливаем стиль прокрутки для Firefox */
+}
+
+.sidebar.active {
+    right: 0; /* Показываем боковую панель */
+}
+.sidebar::-webkit-scrollbar {
+    width: 0;  /* Устанавливаем нулевую ширину для полосы прокрутки */
+    background-color: transparent; /* Делаем фон полосы прозрачным */
+}
+
+.black-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9990;
+    background: #000c;
+    transition: all 0.5s ease; /* Анимация при изменении положения */
+    opacity: 0; /* Скрываем элемент с помощью нулевой прозрачности */
+    pointer-events: none; /* Элемент будет проигнорирован событиями мыши */
+}
+
+.black-back.visible {
+    opacity: 1; /* Показываем элемент с помощью полной прозрачности */
+    pointer-events: auto; /* Включаем обработку событий мыши */
+}
+
+.sidebar-wrapper {
+    padding: 0px;
+    background: #5B85F6;
+    width: auto;
+    height: fit-content;
+}
+
+.sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.sidebar-wrapper h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+
+.sidebar-cards {
+    display: grid;
+    grid-template-columns: 282px 282px;
+    grid-gap: 16px;
+    margin-top: 0px;
+    padding-bottom: 24px;
+}
+
+.liked-card {
+    width: 282px;
+    height: 440px;
+    border-radius: 32px;
+    background: #7C9DF8;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 16px;
+    text-align: start;
+}
+
+.card__img {
+    width: 250px;
+    height: 272px;
+    border-radius: 32px;
+}
+
+.card__descr-wrapper {
+    display: grid;
+}
+
+
+.card__descr {
+    margin-top: 0px;
+    line-height: 100%;
+}
+
+
+.card__links {
+    display: flex;
+    justify-content: space-between;
+    width:250px;
+}
+
+.card img{
+
+    width: 250px;
+    height: 272px;
+    border-radius: 32px;
+}
+
+.liked-card h3{
+    
+    font-family: cocon;
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 0px;
+    line-height: 100%; /*Интерлиньяж (расстояние между строк)*/
+    margin-top:16px;
+    color:white;
+}
+
+.liked-card h4{
+    font-family: 'Geologica', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    opacity:60%;
+    color:white;
+    margin-bottom:3px;
+}
+
+
+.liked-card  {
+    opacity: 0; /* Initially hide the card */
+    transition: opacity 0.6s ease-in-out; /* Smooth transition for opacity */
+}
+
+.card__descr-wrapper {
+    display: grid;
+}
+
+
+.card__descr {
+    margin-top: 0px;
+    line-height: 100%;
+}
+
+
+.card__links {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+}
